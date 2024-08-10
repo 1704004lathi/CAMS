@@ -1,0 +1,98 @@
+.admin-sidebar {
+  width: 250px;
+  height: 100vh; /* Ensure the sidebar covers the full height of the viewport */
+  background: linear-gradient(135deg, #0f0f0f, #2c2c2c); /* Dark gradient background */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Neon glow effect */
+}
+
+.admin-sidebar .logo img {
+  width: 120px; /* Adjust logo size as needed */
+  margin-bottom: 30px;
+  
+}
+
+.admin-sidebar h2 {
+  font-size: 1.8em;
+  color: #00ffff; /* Neon blue text color */
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  margin-bottom: 30px;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.admin-sidebar ul li {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.admin-sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for a sleek look */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+}
+
+.admin-sidebar ul li a:hover {
+  background: rgba(255, 255, 255, 0.2); /* Lighter background on hover */
+  box-shadow: 0 0 20px #00ffff; /* Neon glow effect on hover */
+}
+
+.admin-sidebar ul li a .fa {
+  font-size: 2.5em; /* Increased icon size */
+  margin-bottom: 10px; /* Space between icon and text */
+}
+
+.admin-sidebar ul li a span {
+  font-size: 1.2em; /* Increased text size */
+  transition: color 0.3s;
+}
+
+.admin-sidebar ul li a:hover span {
+  color: #00ffff; /* Neon blue text color on hover */
+}
+
+.admin-sidebar .logout {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.admin-sidebar .logout a {
+  color: #ff4c4c;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for a sleek look */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  background: rgba(255, 76, 76, 0.1); /* Slightly transparent background */
+}
+
+.admin-sidebar .logout a:hover {
+  background: rgba(255, 76, 76, 0.2); /* Lighter background on hover */
+  box-shadow: 0 0 20px #ff4c4c; /* Neon glow effect on hover */
+}
+
+.admin-sidebar .logout a .fa {
+  font-size: 2.5em; /* Increased icon size */
+  margin-bottom: 10px; /* Space between icon and text */
+}
+
+.admin-sidebar .logout a span {
+  font-size: 1.2em; /* Increased text size */
+}

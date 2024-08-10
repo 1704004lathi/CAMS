@@ -1,0 +1,118 @@
+/* Container */
+.forgot-password-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); */
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 11rem;
+}
+
+/* Heading Styles */
+h2.re {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: black;
+  text-shadow: 0 4px 8px rgba(3, 3, 3, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h5.en {
+  font-size: 1.8em;
+  margin-bottom: 2em;
+  color: red;
+  font-weight: 300;
+}
+
+/* Form Styles */
+form.ha {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+/* Label Styles */
+label.la {
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-bottom: 0.5em;
+}
+
+/* Input Styles */
+input.ipt {
+  width: 100%;
+  padding: 0.75em;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  border: 2px solid #00d1ff;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-size: 1.1em;
+  transition: border 0.3s, background 0.3s;
+}
+
+input.ipt:focus {
+  border-color: #00a3cc;
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+/* Button Styles */
+button.btre {
+  width: 100%;
+  padding: 0.75em;
+  margin-top: 1em;
+  border: 2px solid #00d1ff;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00d1ff, #0078d4);
+  color: #ffffff;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5);
+}
+
+button.btre:hover {
+  background: linear-gradient(135deg, #00a3cc, #0056a0);
+  transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer.ft {
+  margin-top: 2em;
+  text-align: center;
+  color: #a6ffcb;
+}
+
+footer.ft a.pes {
+  color: #00d1ff;
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
+  font-weight: bold;
+}
+
+footer.ft a.pes:hover {
+  color: #00a3cc;
+  text-shadow: 0 2px 4px rgba(0, 255, 255, 0.5);
+}
+
+/* Message Styles */
+.message {
+  margin-top: 1em;
+  padding: 0.75em;
+  background: #4caf50;
+  color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.4);
+  font-weight: bold;
+}

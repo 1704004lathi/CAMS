@@ -1,0 +1,147 @@
+/* Wrapper to center the form */
+.bgp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  margin-left: 27rem;
+  margin-top: 10rem;
+  
+}
+
+/* Form styling */
+.booking__form {
+  width: 35%; /* Reduced width */
+  background: rgba(15, 15, 25, 0.9);
+  border: 1px solid #262626;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+  transition: transform 0.3s ease;
+  border: 2px solid #00ffff; 
+}
+
+.booking__form:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.6);
+}
+
+.booking__form input,
+.booking__form select,
+.textarea {
+  padding: 8px 15px;
+  border: 1px solid #303030;
+  background: #1f1f1f;
+  color: #fff;
+  width: 100%;
+  border-radius: 8px;
+  font-family: 'Orbitron', sans-serif;
+  transition: all 0.3s ease;
+  border: 2px solid #00ffff;  
+}
+
+.booking__form input:hover,
+.booking__form select:hover,
+.textarea:hover {
+  background: #2a2a2a;
+}
+
+.booking__form input:focus,
+.booking__form select:focus,
+.textarea:focus {
+  border-color: white;
+  background: #1a1a1a;
+  outline: none;
+  box-shadow: 0 0 10px #00bcd4;
+}
+
+.time__picker::before {
+  content: "Journey Time";
+  color: #6b7280;
+  margin-right: 0.5rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.7;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.booking_form-payment-methods {
+  border: 1px solid #303030;
+  border-radius: 8px;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  background: black;
+  transition: background 0.3s, box-shadow 0.3s;
+  width: 71.5%; /* Decreased width */
+  border: 2px solid #00ffff; 
+}
+
+.booking_form-payment-methods legend {
+  color: #00bcd4;
+  font-size: 1.2rem;
+  padding: 0 5px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.booking_form-form-radio {
+  margin-bottom: 10px;
+}
+
+.booking_form-form-radio label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #bdbdbd;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.booking_form-form-radio label:hover {
+  color: #00bcd4;
+  transform: translateX(5px);
+}
+
+.booking_form-form-radio input[type="radio"] {
+  margin-right: 10px;
+}
+
+.textarea {
+  width: 71.5%; /* Decreased width */
+}
+
+.booking__submit-button {
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding: 10px 0;
+  width: 71.5%;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.booking__submit-button:hover {
+  background-color: #008c9e;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px 4px #00bcd4;
+}
+
+@media only screen and (max-width: 768px) {
+  .booking__form {
+    width: 100%;
+  }
+
+  .booking__form input,
+  .textarea,
+  .booking__form select {
+    font-size: 0.8rem;
+  }
+}
+.cre{
+  margin-left: 21rem;
+}

@@ -1,0 +1,163 @@
+.cis {
+    background: #0f0f1f;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    font-family: 'Orbitron', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 13rem;
+  }
+/*   
+  .cis:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+  } */
+  
+  /* .cis img {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .cis img:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+  } */
+  
+  .cis .section__title {
+    font-size: 2.2rem;
+    color: #00e1ff;
+    margin-bottom: 20px;
+  }
+  
+  .cis .rent__price {
+    font-size: 1.8rem;
+    color: #e94560;
+    font-weight: bold;
+  }
+  
+  .cis .section__description {
+    font-size: 1.2rem;
+    color: #7c8a97;
+    margin: 20px 0;
+  }
+  
+  .cis .rating i {
+    color: #f9a826;
+    font-size: 1.5rem;
+  }
+  
+  .cis .car__info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #00e1ff;
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .cis .car__info i {
+    color: #f9a826;
+    font-size: 1.5rem;
+  }
+  
+  .cis .booking-info {
+    background: #1f1f3f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+  }
+  
+  .cis .booking-info h5 {
+    font-size: 1.8rem;
+    color: #00e1ff;
+    margin-bottom: 20px;
+  }
+  
+  .cis .payment-form {
+    margin-top: 20px;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .cis .section__title {
+      font-size: 1.5rem;
+    }
+  
+    .cis .rent__price {
+      font-size: 1.2rem;
+    }
+  
+    .cis .section__description {
+      font-size: 1rem;
+    }
+  
+    .cis .car__info span {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .cis .section__title {
+      font-size: 1.2rem;
+    }
+  
+    .cis .rent__price {
+      font-size: 1rem;
+    }
+  
+    .cis .section__description {
+      font-size: 0.8rem;
+    }
+  
+    .cis .car__info span {
+      font-size: 0.8rem;
+    }
+  
+    .cis .car__info i {
+      font-size: 1.2rem;
+    }
+  }
+  .carbtbn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #00e1ff, #00bcd4);
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .carbtbn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, rgba(0, 225, 255, 0.5), rgba(0, 188, 212, 0.5));
+    transition: transform 0.3s ease;
+    transform: rotate(45deg) scale(0);
+    z-index: -1;
+  }
+  
+  .carbtbn:hover::before {
+    transform: rotate(45deg) scale(1);
+  }
+  
+  .carbtbn:hover {
+    background: red;
+    color: #ffffff;
+    transform: scale(1.05);
+    /* box-shadow: 0 0 20px rgb(216, 3, 3); */
+  }
+  

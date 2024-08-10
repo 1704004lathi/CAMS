@@ -1,0 +1,91 @@
+/* Overall container styling */
+.report-page {
+    display: flex;
+    min-height: 100vh;
+    background: black; /* Dark background for a futuristic look */
+    color: #ffffff; /* White text for better contrast */
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+}
+
+/* Sidebar styling */
+.admin-sidebar {
+    width: 250px;
+    background: #141421; /* Darker background for the sidebar */
+    color: #e0e0e0; /* Light text color for the sidebar */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Report content area styling */
+.report-content {
+    flex: 1;
+    padding: 20px;
+    background: #2c2c3e; /* Slightly lighter background for the main content */
+    color: #ffffff; /* White text for contrast */
+}
+
+/* Heading styling */
+.rhh {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #00d4ff; /* Bright blue color for the heading */
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.7);
+}
+
+/* Section styling */
+.report-section {
+    margin-bottom: 30px;
+}
+
+.report-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #00d4ff; /* Bright blue color for section titles */
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+}
+
+/* Table styling */
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #3c3c5e; /* Dark background for the table */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.report-table th,
+.report-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #444; /* Dark border for table rows */
+}
+
+.report-table th {
+    background: #007acc; /* Bright blue color for table headers */
+    color: #fff; /* White text for table headers */
+    text-shadow: 0 0 5px rgba(0, 122, 204, 0.5);
+}
+
+.report-table td {
+    color: #ffffff; /* White text color for table cells */
+    animation: fadeIn 1s ease-in-out;
+}
+
+.report-table tr:nth-child(even) {
+    background-color: #2c2c3e; /* Darker background for even rows */
+}
+
+.report-table tr:hover {
+    background-color: #3c3c5e; /* Slightly lighter background on hover */
+}
+
+/* Fade-in animation for table cells */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

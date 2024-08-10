@@ -1,0 +1,108 @@
+.servicereport-container {
+  display: flex;
+  /* background: url('/path-to-your-background-image.jpg') no-repeat center center fixed;
+  background-size: cover; */
+  color: #fff;
+}
+
+.servicereport-main {
+  flex: 1;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 20px;
+  overflow-y: auto;
+}
+
+.servicereport-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.servicereport-table th, .servicereport-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.servicereport-table th {
+  background-color: #333;
+  color: #0ff;
+}
+
+.servicereport-table td {
+  background-color: #222;
+  color: #fff;
+}
+
+.servicereport-table button {
+  background: #0ff;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.servicereport-table button:hover {
+  background: #00cccc;
+  color: #fff;
+}
+
+.servicereport-form {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.servicereport-form h2 {
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+  margin-bottom: 20px;
+}
+
+.servicereport-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.servicereport-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: #fff;
+  font-size: 1em;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.servicereport-form input[type="text"]:focus {
+  background: #333;
+  outline: none;
+  box-shadow: 0 0 10px #0ff, inset 0 0 10px #0ff;
+}
+
+.servicereport-form button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background: #0ff;
+  color: #000;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicereport-form button:hover {
+  background: #00cccc;
+  color: #fff;
+  box-shadow: 0 0 10px #00cccc, 0 0 20px #00cccc, 0 0 30px #00cccc;
+}

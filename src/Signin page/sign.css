@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.register-wrapper {
+    width: 420px;
+    background:black;
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    color: #00ffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 5% auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15rem;
+}
+
+.register-wrapper h1 {
+    font-size: 36px;
+    color: #00ffff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.register-input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.register-input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    border-radius: 30px;
+    font-size: 16px;
+    color: #00ffff;
+    padding: 15px 45px;
+    outline: none;
+}
+
+.register-input-box input::placeholder {
+    color: #00ffff;
+    opacity: 0.8;
+}
+
+.register-input-box .iconmax {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00ffff;
+    font-size: 20px;
+}
+
+.register-button {
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(135deg, #00ffff, #007777);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.register-button:hover {
+    background: linear-gradient(135deg, #007777, #00ffff);
+}
+
+.register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

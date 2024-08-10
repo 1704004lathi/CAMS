@@ -1,0 +1,46 @@
+.gridview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gridview-item {
+    width: 280px;
+    height: 150px;
+    background: #1f1f1f;
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    /* box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.gridview-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
+}
+
+.gridview-icon {
+    font-size: 48px;
+    color: #00ffff;
+}
+
+.gridview-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ffff;
+}
+
+.gridview-label {
+    font-size: 18px;
+    color: #00ffff;
+}

@@ -1,0 +1,207 @@
+/* General page styling */
+.accpay-pageBackground {
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, #1a1a1a, #292929); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 11rem;
+}
+
+/* Form container styling */
+.accpay-formContainer {
+  width: 100%;
+  max-width: 900px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3); /* Neon glow effect */
+  backdrop-filter: blur(15px);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accpay-formContainer:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.5); /* Enhanced glow on hover */
+}
+
+/* Header styling */
+.accpay-header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  color: #00ffff; 
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Form styling */
+.accpay-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accpay-card {
+  background-color: #333333;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 255, 255, 0.2); /* Subtle neon glow */
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accpay-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 12px 24px rgba(0, 255, 255, 0.4); /* Enhanced glow on hover */
+}
+
+/* Input box styling */
+.accpay-inputBox {
+  margin-bottom: 15px;
+}
+
+.accpay-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: white; 
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.accpay-inputBox input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #00ffff; /* Neon border */
+  border-radius: 6px;
+  background-color: #1e1e1e; /* Dark background for inputs */
+  color: #e0e0e0;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accpay-inputBox input:hover {
+  border-color: #00b3b3; /* Darker cyan on hover */
+  box-shadow: 0 0 10px #00ffff; /* Neon glow on hover */
+}
+
+.accpay-inputBox input:focus {
+  border-color: #00b3b3; /* Darker cyan on focus */
+  box-shadow: 0 0 15px #00ffff; /* Enhanced neon glow on focus */
+}
+
+/* Radio button styling */
+.accpay-formRadios {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.accpay-formRadio {
+  display: flex;
+  align-items: center;
+}
+
+.accpay-formRadio label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: white; /* Neon cyan for labels */
+  font-size: 16px;
+}
+
+.accpay-formRadio input {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #1e1e1e; /* Dark background for radio buttons */
+  border: 2px solid #00ffff; /* Neon border for radio buttons */
+  border-radius: 50%;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .accpay-formRadio input:hover {
+  border-color: #00b3b3; 
+  box-shadow: 0 0 10px #00ffff; 
+} */
+
+.accpay-formRadio input:checked {
+  border-color: #00b3b3; /* Darker cyan when checked */
+  box-shadow: 0 0 15px #00ffff; /* Enhanced neon glow when checked */
+}
+
+/* Icon styling */
+.accpay-icon {
+  width: 24px;
+  height: 24px;
+  fill: #00ffff; /* Neon cyan fill for icons */
+  transition: fill 0.3s ease;
+}
+
+.accpay-icon:hover {
+  fill: #00b3b3; /* Darker cyan on hover */
+}
+
+/* Button styling */
+.accpay-button {
+  display: inline-block;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  color: #1e1e1e;
+  background-color: #00ffff; /* Neon cyan background */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #00ffff; /* Neon glow for button */
+}
+
+.accpay-button:hover {
+  background-color: #00b3b3; /* Darker cyan on hover */
+  transform: scale(1.1); /* Slightly larger on hover */
+  box-shadow: 0 0 15px #00ffff; /* Enhanced neon glow on hover */
+}
+
+.accpay-buttonFull {
+  width: 100%;
+}
+
+.accpay-button svg {
+  margin-right: 8px;
+}
+
+/* Address heading styling */
+.accpay-addressHeading {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00ffff; /* Neon cyan color */
+  margin-bottom: 10px;
+  border-bottom: 2px solid #00b3b3; /* Darker cyan underline */
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.accpay-addressHeading:hover {
+  color: #00b3b3; /* Darker cyan on hover */
+  border-color: #00ffff; /* Lighter cyan underline on hover */
+}
+.lh{
+  color:  #00ffff;
+}

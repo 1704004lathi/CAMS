@@ -1,0 +1,86 @@
+/* UserManagement.css */
+
+.userman-user-management {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+.userman-sidebar {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+}
+
+.userman-sidebar h2 {
+  margin-top: 0;
+}
+
+.userman-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.userman-sidebar ul li {
+  margin: 10px 0;
+}
+
+.userman-sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.userman-user-management-content {
+  flex: 1;
+  margin-left: 250px; /* Width of the sidebar */
+  padding: 20px;
+}
+
+.userman-user-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.userman-user-table th,
+.userman-user-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.userman-user-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.userman-user-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.userman-user-table tr:hover {
+  background-color: #ddd;
+}
+
+.userman-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+.userman-button:hover {
+  background-color: #d32f2f;
+}
+
+.userman-profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}

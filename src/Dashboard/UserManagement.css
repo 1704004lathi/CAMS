@@ -1,0 +1,100 @@
+/* Overall container styling */
+.userman-user-management {
+    display: flex;
+    min-height: 100vh;
+    background: black; /* Slightly lighter dark background for a milder look */
+    color: #e0e0e0; /* Light text color for contrast */
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+}
+
+/* Adjusted container width and centering */
+.userman-user-management-content {
+    flex: 1;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    background: rgba(30, 30, 30, 0.8); /* Slightly transparent dark background */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(100, 200, 255, 0.2); /* Softer glowing shadow effect */
+    margin: 0 auto;
+    overflow-x: auto; /* Handle overflow for wider tables */
+}
+
+/* Header styling */
+.userman {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #a8d0e6; /* Mild cyan color for heading */
+}
+
+/* Table styling */
+.userman-user-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #3a3a4f; /* Softer dark background for table */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.userman-user-table th,
+.userman-user-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #444; /* Lighter border for table rows */
+}
+
+.userman-user-table th {
+    background: linear-gradient(135deg, #444, #666); /* Gradient header background with mild colors */
+    color: #a8d0e6; /* Mild cyan color for table headers */
+    font-family: 'Orbitron', sans-serif; /* Futuristic font for headers */
+}
+
+.userman-user-table td {
+    color: black; /* Light text color for table cells */
+}
+
+.userman-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #a8d0e6; /* Mild cyan border for profile pics */
+    box-shadow: 0 0 8px rgba(100, 200, 255, 0.2); /* Softer glowing effect for profile pics */
+}
+
+/* Button styling */
+.userman-button,
+.userman-remove-button {
+    background: linear-gradient(135deg, #a8d0e6, #8ac6e2); /* Mild gradient button background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif; /* Futuristic font for buttons */
+    transition: background 0.3s, transform 0.2s; /* Smooth transitions */
+    margin: 0 5px; /* Space between buttons */
+}
+
+.userman-button:hover,
+.userman-remove-button:hover {
+    background: linear-gradient(135deg, #8ac6e2, #7ab9d1); /* Slightly different gradient on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.userman-button:focus,
+.userman-remove-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(100, 200, 255, 0.3); /* Focus outline with softer glowing effect */
+}
+
+/* Remove button specific styling */
+.userman-remove-button {
+    background: linear-gradient(135deg, #f2a1a1, #e57373); /* Mild red gradient for remove button */
+}
+
+.userman-remove-button:hover {
+    background: linear-gradient(135deg, #e57373, #d32f2f); /* Slightly darker red gradient on hover */
+}

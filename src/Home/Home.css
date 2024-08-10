@@ -1,0 +1,160 @@
+.Home {
+    font-family: "Roboto", sans-serif;
+    /* margin-top: 35rem; */
+    min-height: 100vh;
+    background-image: url("https://wallpapercave.com/wp/wp1981801.jpg");
+    
+    
+  }
+  
+   .Home .hom-con {
+    padding: 1rem;
+    margin: 0 auto;
+    /* max-width: 100%; */
+    width: 1000px;
+    margin-top: 1rem;
+   
+    
+  } 
+  
+  .Home .header {
+    /* background-image: url("https://wallpapercave.com/wp/wc1745112.jpg"); */
+    background-size:cover;
+    justify-content: space-evenly;
+    background-position: center center; 
+    width: 100%;
+    background-repeat: no-repeat;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top:0px;
+  padding-bottom:0px;
+  
+
+  }
+  
+  .Home .content {
+    font-size: 2.7rem;
+    margin: auto;
+    max-width: 100%;
+    
+  }
+  
+  .Home .content h1 {
+    color: black;
+    margin-bottom: 0;
+  }
+  
+  
+  
+  .Home .highlight:hover {
+    background-color: #ff1a30;
+  }
+  
+  .Home .selected {
+    font-weight: bold;
+  }
+  
+  /* Base styling for the futuristic button */
+  .Home .highlight {
+    background: linear-gradient(135deg, rgba(236, 10, 28, 0.8), rgba(255, 20, 20, 0.8));
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 12px; /* Rounded corners for a modern look */
+    font-weight: bold; /* Make the text stand out */
+    text-transform: uppercase; /* Modern, uppercase text */
+    font-size: 1.8rem; /* Increase font size for emphasis */
+    display: inline-block; /* Ensure proper padding and margin handling */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(236, 10, 28, 0.6); /* Enhanced shadow effects */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Smooth transitions */
+  }
+  
+  /* Before pseudo-element for added glow effect */
+  .Home .highlight::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(236, 10, 28, 0.4), rgba(255, 20, 20, 0.4));
+    transition: all 0.3s ease;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  
+  /* Hover effect for futuristic feel */
+  .Home .highlight:hover {
+    background: linear-gradient(135deg, rgba(255, 20, 20, 0.8), rgba(236, 10, 28, 0.8));
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 30px rgba(236, 10, 28, 0.8); /* Intensified shadow on hover */
+  }
+  
+  /* Hover effect for pseudo-element */
+  .Home .highlight:hover::before {
+    background: radial-gradient(circle, rgba(255, 20, 20, 0.6), rgba(236, 10, 28, 0.6));
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .Home footer {
+    background-color: #000;
+    color: #fff;
+    padding: 5rem;
+  }
+  
+  .Home footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Home footer strong {
+    color: #00c2ff;
+    font-size: 2.5rem;
+  }
+  
+  .Home footer p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .Home .content {
+      margin: 2rem auto 0;
+      font-size: 1.5rem;
+    }
+  
+    .Home .nav ul {
+      flex-direction: column;
+    }
+  
+    .Home .nav li:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  
+    .Home .nav .highlight {
+      display: none;
+    }
+  
+    .Home footer ul {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .Home footer li {
+      margin: 2rem;
+      text-align: center;
+    }
+  }
+  

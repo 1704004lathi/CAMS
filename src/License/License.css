@@ -1,0 +1,152 @@
+/* General container styling */
+.license-contact-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #1e1e1e, #292929); /* Gradient background for a futuristic look */
+  font-size: 16px;
+  color: #e0e0e0; /* Light text color for contrast */
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto; /* Centering container */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); /* Cyan shadow for a neon glow effect */
+  border: 2px solid #00ffff; /* Cyan border for a futuristic feel */
+  margin-top: 11rem;
+}
+
+/* Header styling */
+.license-contact-container h1 {
+  color: #00ffff;
+  margin-bottom: 20px;
+  font-size: 26px; /* Larger font size for the header */
+  text-align: center;
+  text-transform: uppercase; /* Uppercase text for a bold, futuristic look */
+  letter-spacing: 2px; /* Spacing between letters for readability */
+}
+
+/* Form styling */
+.license-form-group {
+  margin-bottom: 20px;
+  position: relative; /* Position relative for futuristic effects */
+}
+
+.license-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  /* color: #00ffff; Cyan color for labels */
+  text-transform: uppercase;
+}
+
+.license-form-group input,
+.license-form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #00ffff; /* Cyan border for input fields */
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #2a2a2a; /* Dark background for input fields */
+  color: #e0e0e0; /* Light text color */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effect */
+}
+
+.license-form-group input::placeholder,
+.license-form-group textarea::placeholder {
+  color: #999; /* Light gray placeholder text */
+}
+
+.license-form-group input:focus,
+.license-form-group textarea:focus {
+  border-color: #00ffff; 
+  box-shadow: 0 0 10px #00ffff; /* Neon glow on focus */
+}
+
+.license-form-group textarea {
+  resize: vertical;
+  height: 140px; /* Increased height for textarea */
+}
+
+/* Payment methods styling */
+.license-payment-methods {
+  margin-top: 20px;
+  border: 2px solid #00ffff; /* Cyan border for payment methods */
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #2a2a2a; /* Dark background for payment methods */
+}
+
+.license-payment-methods legend {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #00ffff; /* Cyan color for legend text */
+  text-transform: uppercase;
+}
+
+.license-form-radio {
+  margin-bottom: 10px;
+}
+
+.license-form-radio label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  color: #e0e0e0; /* Light color for radio options */
+}
+
+.license-form-radio input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Button styling */
+.license-button {
+  background-color: #00ffff; /* Cyan color for the button */
+  color: #1e1e1e; /* Dark text color for contrast */
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  display: block;
+  margin: 0 auto; /* Center the button */
+  text-transform: uppercase;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Neon glow for the button */
+}
+
+.license-button:hover {
+  background-color: #00b3b3; /* Darker cyan on hover */
+  transform: scale(1.1); /* Slightly larger button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .license-contact-container {
+    padding: 15px;
+    max-width: 90%; /* Adjust max-width for smaller screens */
+  }
+
+  .license-form-group input,
+  .license-form-group textarea {
+    font-size: 14px;
+  }
+
+  .license-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .license-contact-container {
+    padding: 10px;
+  }
+
+  .license-form-group input,
+  .license-form-group textarea {
+    font-size: 12px;
+  }
+
+  .license-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

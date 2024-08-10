@@ -1,0 +1,107 @@
+/* Base styling for the footer */
+.footer {
+  background: linear-gradient(135deg, #0a0a0a, #1f1f1f);
+  color: white;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.5);
+  
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.footer-logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.footer-links, .footer-socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.footer-link, .social-link {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.footer-link::before, .social-link::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #f10505;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.footer-link:hover, .social-link:hover {
+  color: #f10505;
+  transform: translateY(-3px);
+}
+
+.footer-link:hover::before, .social-link:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.social-icon {
+  margin-right: 0.5rem; /* Add space between icon and text */
+}
+
+/* Add specific colors for each social icon */
+.facebook-icon {
+  color: #3b5998;
+}
+
+.twitter-icon {
+  color: #00acee;
+}
+
+.instagram-icon {
+  color: #e4405f;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Add a futuristic glow effect to footer */
+.footer::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+  transform: translate(-50%, -50%) scale(1.5);
+  z-index: -1;
+}
