@@ -1,28 +1,33 @@
 /* Container Styling */
 .userman-user-management {
     display: flex;
-    
-    min-height: 100vh;
-    background: linear-gradient(135deg, #0f0f0f, #1a1a1a); /* Gradient dark background */
-    color: #ffffff;
-    justify-content: center;
-    align-items: center;
+    max-height: 100vh; /* Extend to full viewport height */
+    background-color: black;
+    /* color: #ffffff;
+    justify-content: flex-start; 
     padding: 20px;
+    margin-top: 0; */
+    margin-bottom: 0rem; 
 }
 
 /* Adjusted container width and centering */
 .userman-user-management-content {
     flex: 1;
-    width: 100%;
     max-width: 1100px;
-    padding: 40px;
+    padding: 20px; /* Reduced padding */
     background: rgba(34, 34, 34, 0.9);
     border-radius: 15px;
     box-shadow: 0 0 30px rgba(100, 200, 255, 0.5); /* Enhanced glowing shadow */
-    margin: 0 auto;
+    margin: auto; /* Center the content */
     overflow-x: auto;
     transition: transform 0.3s ease; /* Smooth content transition */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    max-height: 80vh; /* Set a maximum height to reduce overall content height */
 }
+
 
 .userman-user-management-content:hover {
     transform: translateY(-5px); /* Subtle hover lift effect */
@@ -111,11 +116,15 @@
 .userman-remove-button:hover {
     background: linear-gradient(135deg, #d32f2f, #9d1d1d);
 }
+
+/* Sidebar Styling */
 .usermanadmin-sidebar {
     width: 250px;
     background-color: #394957;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    height: 100%;
     color: #fff;
+    position: fixed; /* Keep the sidebar fixed */
+    top: 0;
+    left: 0;
 }

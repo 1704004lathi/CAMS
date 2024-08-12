@@ -171,3 +171,14 @@
   color: #00ffff;
   font-size: 20px;
 }
+.car-item-background {
+  min-height: 100vh; /* Ensure it covers the full height of the viewport */
+  background-image: url('https://img.freepik.com/free-vector/abstract-black-texture-background-hexagon_206725-413.jpg'); /* Example background color */
+  background-size: cover; /* Ensure the background image covers the entire area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+  display: flex; /* Flexbox for centering content */
+  flex-direction: column;
+}

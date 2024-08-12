@@ -1,13 +1,15 @@
 .cis {
-    background: #0f0f1f;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-    font-family: 'Orbitron', sans-serif;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 13rem;
-  }
+  width: 90%; /* Adjust the width to make the content more responsive */
+  max-width: 1200px; /* Set a maximum width for better readability on larger screens */
+  margin: 20px auto; /* Center the container horizontally */
+  background: rgba(15, 15, 31, 0.9); /* Add a semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  font-family: 'Orbitron', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 13rem;
+}
 /*   
   .cis:hover {
     transform: scale(1.02);
@@ -159,5 +161,19 @@
     color: #ffffff;
     transform: scale(1.05);
     /* box-shadow: 0 0 20px rgb(216, 3, 3); */
+  }
+  .toy {
+    min-height: 100vh; /* Ensure it covers the full height of the viewport */
+    width: 100%; /* Ensure it covers the full width of the viewport */
+    background-image: url('https://img.freepik.com/free-vector/abstract-black-texture-background-hexagon_206725-413.jpg');
+    background-size: cover; /* Ensure the background image covers the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    display: flex; /* Flexbox for centering content */
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
   }
   

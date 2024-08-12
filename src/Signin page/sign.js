@@ -41,7 +41,7 @@ const Sign = () => {
   };
 
   return (
-    <div>
+    <div className='bls'>
       <Navigation />
     <div className='register-wrapper'>
       <form onSubmit={handleSubmit}>

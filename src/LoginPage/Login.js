@@ -40,7 +40,7 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className='bl'>
       <Navigation />
       <div className='login-wrapper'>
         <form onSubmit={handleSubmit}>

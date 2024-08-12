@@ -13,7 +13,7 @@ const CarItems = (props) => {
   };
 
   return (
-    <div>
+    <div className="toy">
       <Navigation />
     <section>
       

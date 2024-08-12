@@ -20,7 +20,7 @@
 .report-content {
     flex: 1;
     padding: 20px;
-    background: #2c2c3e; /* Slightly lighter background for the main content */
+    background: black; /* Slightly lighter background for the main content */
     color: #ffffff; /* White text for contrast */
 }
 

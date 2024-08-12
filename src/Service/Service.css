@@ -1,15 +1,20 @@
 /* Services.css */
 
 .service-head-container{
-    margin-top: 0px;
-    /* background-image: url("https://wallpapercave.com/wp/wp3978395.jpg"); */
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it covers the full height of the viewport */
+    background-image: url('https://wallpapercave.com/wp/wp3726555.jpg');
+    background-size: cover; /* Ensure the background image covers the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
 }
 .service-container {
     width: 100%;
     margin-top: 13%;
     min-height: 60vh;
     font-family: 'Arial', sans-serif;
+    
 }
 
 /* .service-header {
@@ -44,6 +49,7 @@
     color: #fff;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 20px rgb(18, 154, 199);
 }
 
 .service-card img {
@@ -98,7 +104,7 @@
 
 .service-icon {
     font-size: 3em;
-    color: #fff;
+    color: rgba(0, 255, 255, 0.5);;
     margin-bottom: 20px;
 }
 

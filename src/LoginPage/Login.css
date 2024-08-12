@@ -124,3 +124,12 @@
 .login-lg {
     color: #00ffff;
 }
+.bl {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it covers the full height of the viewport */
+    background-image: url('https://wallpapercave.com/wp/wp7996624.jpg');
+    background-size: cover; /* Ensure the background image covers the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+}
