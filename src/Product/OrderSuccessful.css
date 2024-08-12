@@ -1,0 +1,143 @@
+
+
+/* Container styles */
+.ordersuccess-container {
+    margin: 40px auto;
+    width: 75%;
+    text-align: center;
+    background-color: black; /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 11rem;
+}
+
+/* Image styles */
+.ordersuccess-image {
+    width: 25%;
+    height: auto;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+}
+
+/* Header styles */
+.ordersuccess-header {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: white;
+}
+
+/* Purchase details styles */
+.ordersuccess-about-the-purchase {
+    margin-top: 40px;
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    vertical-align: top;
+    color: white;
+}
+
+.ordersuccess-strong {
+    color: rgb(245, 4, 4);
+}
+
+.ordersuccess-first-detail,
+.ordersuccess-second-detail {
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.ordersuccess-button {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    min-width: 150px;
+    cursor: pointer;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Barlow", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* Home button styles */
+.ordersuccess-home-button {
+    background: linear-gradient(45deg, #ff5800, #ff0099);
+    color: var(--white-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 0, 153, 0.4);
+    border: 2px solid rgba(255, 0, 153, 0.4);
+}
+
+.ordersuccess-home-button:hover {
+    background: linear-gradient(45deg, #ff0099, #ff5800);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 0, 153, 0.6);
+    transform: scale(1.05);
+}
+
+.ordersuccess-home-button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 0, 153, 0.4);
+    transform: scale(0.95);
+}
+
+/* Suggestions styles */
+.ordersuccess-suggestions {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 50px;
+    color: white;
+}
+
+.ordersuccess-suggestions-container {
+    background-color: var(--light-gray-color);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.ordersuccess-suggestion-item {
+    background-color: var(--white-color);
+    font-size: 15px;
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    flex: 0 0 auto;
+}
+
+.ordersuccess-suggestion-item img {
+    width: 100%;
+    height: auto;
+}
+
+.ordersuccess-suggestion-item p {
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* Price styles */
+.ordersuccess-price {
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* Horizontal rule styles */
+.ordersuccess-hr {
+    margin-top: 40px;
+    border: 1px solid #ddd;
+}
+.ordersuccess-suggestion-item{
+    color: white;
+}

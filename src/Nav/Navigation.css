@@ -176,10 +176,10 @@ html, body {
   right: -10px;
 }
 /* Navi.css */
-.icon-link .icon-white {
-  color: black;
+.icon-link .icon-color {
+  color: #180210;
 }
 
-.icon-link:hover .icon-white {
+.icon-link:hover .icon-color {
   color: #ccc; /* Optional: Change color on hover */
 }

@@ -33,6 +33,7 @@ import RentalReport from "./Dashboard/RentalReport.js";
 import AccessoriesReport from "./Dashboard/AccessoriesReport.js";
 import GridView from "./Dashboard/GridView.js";
 import Payment from "./Product/Payment.js";
+import OrderSuccessful from "./Product/OrderSuccessful";
 function App()
 {
   return(
@@ -70,6 +71,7 @@ function App()
       <Route path='/RentalReport' element={<RentalReport/>}></Route> 
       <Route path='/AccessoriesReport' element={<AccessoriesReport/>}></Route> 
       <Route path='/GridView' element={<GridView/>}></Route> 
+      <Route path='/OrderSuccessful' element={<OrderSuccessful/>}></Route> 
      
       
       

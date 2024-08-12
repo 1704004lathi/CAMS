@@ -6,7 +6,7 @@
   min-height: 100vh; /* Full viewport height */
   margin-left: 27rem;
   margin-top: 10rem;
-  
+ 
 }
 
 /* Form styling */
@@ -18,7 +18,7 @@
   padding: 15px;
   box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
   transition: transform 0.3s ease;
-  border: 2px solid #00ffff; 
+  /* border: 2px solid #00ffff;  */
 }
 
 .booking__form:hover {
@@ -143,5 +143,14 @@
   }
 }
 .cre{
-  margin-left: 21rem;
+  margin-right: 11rem;
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  color: #00ffff; 
+  /* text-align: center; */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
+

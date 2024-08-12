@@ -118,7 +118,7 @@
       font-size: 1.2rem;
     }
   }
-  .carbtbn {
+  .carbtbnb {
     display: inline-block;
     padding: 12px 25px;
     background: linear-gradient(45deg, #00e1ff, #00bcd4);
@@ -137,7 +137,7 @@
     z-index: 1;
   }
   
-  .carbtbn::before {
+  .carbtbnb::before {
     content: "";
     position: absolute;
     top: -50%;
@@ -150,11 +150,11 @@
     z-index: -1;
   }
   
-  .carbtbn:hover::before {
+  .carbtbnb:hover::before {
     transform: rotate(45deg) scale(1);
   }
   
-  .carbtbn:hover {
+  .carbtbnb:hover {
     background: red;
     color: #ffffff;
     transform: scale(1.05);

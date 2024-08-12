@@ -1,100 +1,121 @@
-/* Overall container styling */
+/* Container Styling */
 .userman-user-management {
     display: flex;
+    
     min-height: 100vh;
-    background: black; /* Slightly lighter dark background for a milder look */
-    color: #e0e0e0; /* Light text color for contrast */
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a); /* Gradient dark background */
+    color: #ffffff;
     justify-content: center;
-    align-items: center; /* Center content vertically */
+    align-items: center;
+    padding: 20px;
 }
 
 /* Adjusted container width and centering */
 .userman-user-management-content {
     flex: 1;
-    width: 90%;
-    max-width: 1200px;
-    padding: 20px;
-    background: rgba(30, 30, 30, 0.8); /* Slightly transparent dark background */
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(100, 200, 255, 0.2); /* Softer glowing shadow effect */
+    width: 100%;
+    max-width: 1100px;
+    padding: 40px;
+    background: rgba(34, 34, 34, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(100, 200, 255, 0.5); /* Enhanced glowing shadow */
     margin: 0 auto;
-    overflow-x: auto; /* Handle overflow for wider tables */
+    overflow-x: auto;
+    transition: transform 0.3s ease; /* Smooth content transition */
 }
 
-/* Header styling */
+.userman-user-management-content:hover {
+    transform: translateY(-5px); /* Subtle hover lift effect */
+}
+
+/* Header Styling */
 .userman {
-    font-family: 'Orbitron', sans-serif; /* Futuristic font */
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
     text-align: center;
-    color: #a8d0e6; /* Mild cyan color for heading */
+    color: #90e0ef; /* Softer cyan color for the heading */
+    text-shadow: 0 2px 10px rgba(144, 224, 239, 0.6); /* Glow effect on text */
 }
 
-/* Table styling */
+/* Table Styling */
 .userman-user-table {
     width: 100%;
     border-collapse: collapse;
-    background: #3a3a4f; /* Softer dark background for table */
+    background: #282c34;
     border-radius: 12px;
     overflow: hidden;
 }
 
 .userman-user-table th,
 .userman-user-table td {
-    padding: 15px;
+    padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #444; /* Lighter border for table rows */
+    border-bottom: 1px solid #444;
 }
 
 .userman-user-table th {
-    background: linear-gradient(135deg, #444, #666); /* Gradient header background with mild colors */
-    color: #a8d0e6; /* Mild cyan color for table headers */
-    font-family: 'Orbitron', sans-serif; /* Futuristic font for headers */
+    background: linear-gradient(135deg, #444, #666);
+    color: #90e0ef;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .userman-user-table td {
-    color: black; /* Light text color for table cells */
+    color: #fd2f2f;
 }
 
+/* Profile Picture Styling */
 .userman-profile-pic {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 3px solid #a8d0e6; /* Mild cyan border for profile pics */
-    box-shadow: 0 0 8px rgba(100, 200, 255, 0.2); /* Softer glowing effect for profile pics */
+    border: 3px solid #90e0ef;
+    box-shadow: 0 0 10px rgba(144, 224, 239, 0.5); /* Subtle glow around profile pics */
 }
 
-/* Button styling */
+/* Button Styling */
 .userman-button,
 .userman-remove-button {
-    background: linear-gradient(135deg, #a8d0e6, #8ac6e2); /* Mild gradient button background */
+    background: linear-gradient(135deg, #90e0ef, #0077b6);
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 6px;
+    padding: 12px 25px;
+    border-radius: 8px;
     cursor: pointer;
-    font-family: 'Orbitron', sans-serif; /* Futuristic font for buttons */
-    transition: background 0.3s, transform 0.2s; /* Smooth transitions */
-    margin: 0 5px; /* Space between buttons */
+    font-family: 'Orbitron', sans-serif;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    margin: 0 8px;
 }
 
 .userman-button:hover,
 .userman-remove-button:hover {
-    background: linear-gradient(135deg, #8ac6e2, #7ab9d1); /* Slightly different gradient on hover */
-    transform: scale(1.05); /* Slight scale effect on hover */
+    background: linear-gradient(135deg, #0077b6, #023e8a);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(100, 200, 255, 0.5);
 }
 
 .userman-button:focus,
 .userman-remove-button:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(100, 200, 255, 0.3); /* Focus outline with softer glowing effect */
+    box-shadow: 0 0 0 4px rgba(144, 224, 239, 0.4);
 }
 
-/* Remove button specific styling */
+/* Remove Button Specific Styling */
 .userman-remove-button {
-    background: linear-gradient(135deg, #f2a1a1, #e57373); /* Mild red gradient for remove button */
+    background: linear-gradient(135deg, #ef476f, #d32f2f);
 }
 
 .userman-remove-button:hover {
-    background: linear-gradient(135deg, #e57373, #d32f2f); /* Slightly darker red gradient on hover */
+    background: linear-gradient(135deg, #d32f2f, #9d1d1d);
+}
+.usermanadmin-sidebar {
+    width: 250px;
+    background-color: #394957;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    color: #fff;
 }

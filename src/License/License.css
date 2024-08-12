@@ -15,12 +15,14 @@
 
 /* Header styling */
 .license-contact-container h1 {
-  color: #00ffff;
-  margin-bottom: 20px;
-  font-size: 26px; /* Larger font size for the header */
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  color: #00ffff; 
   text-align: center;
-  text-transform: uppercase; /* Uppercase text for a bold, futuristic look */
-  letter-spacing: 2px; /* Spacing between letters for readability */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* Form styling */

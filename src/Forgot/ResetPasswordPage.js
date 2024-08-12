@@ -8,7 +8,7 @@ export default function ResetPasswordPage() {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [message, setMessage] = useState('');
-    const history = useNavigate();
+    const navigate = useNavigate();
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -28,21 +28,23 @@ export default function ResetPasswordPage() {
         const data = await response.json();
         if (data.success) {
             setMessage('Your password has been reset successfully.');
-            history.push('/login');
+            navigate('/login');
         } else {
             setMessage('There was an error. Please try again.');
         }
     };
 
     return (
-        <div className="container reset-password-container">
+        <div>
             <Navigation />
-            <h2 className='hi'>Reset Password</h2><br/>
-            <form onSubmit={handleSubmit} className='hello'>
+        <div className="reset-password-container">
+            
+            <h2 className="reset-hi">Reset Password</h2>
+            <form onSubmit={handleSubmit} className="reset-hello">
                 <p>
-                    <label className='how'>New Password</label><br/>
+                    <label className="reset-how">New Password</label>
                     <input
-                        className='ar'
+                        className="reset-ar"
                         type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
@@ -50,9 +52,9 @@ export default function ResetPasswordPage() {
                     />
                 </p>
                 <p>
-                    <label className='how'>Confirm Password</label><br/>
+                    <label className="reset-how">Confirm Password</label>
                     <input
-                        className='ar'
+                        className="reset-ar"
                         type="password"
                         value={confirmPassword}
                         onChange={(e) => setConfirmPassword(e.target.value)}
@@ -60,10 +62,11 @@ export default function ResetPasswordPage() {
                     />
                 </p>
                 <p>
-                    <button type="submit" className='you'>Reset Password</button>
+                    <button type="submit" className="reset-you">Reset Password</button>
                 </p>
             </form>
-            {message && <p className="messagehi">{message}</p>}
+            {message && <p className="reset-messagehi">{message}</p>}
+        </div>
         </div>
     );
 }

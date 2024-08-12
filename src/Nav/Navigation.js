@@ -49,7 +49,7 @@ function Navigation() {
       </div> */}
       <div className="icon-link">
         <Link to="/Login">
-          <FontAwesomeIcon icon={faUser} className='icon-white'/>
+          <FontAwesomeIcon icon={faUser} className='icon-color'/>
         </Link>
       </div>
     </nav>

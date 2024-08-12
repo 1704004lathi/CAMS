@@ -72,7 +72,7 @@ const CarItems = (props) => {
                 </span>
               </div>
               {/* Add the Book Now button */}
-              <button className="carbtbn" onClick={handleBookNowClick}>
+              <button className="carbtbnb" onClick={handleBookNowClick}>
                 Book Now
               </button>
             </div>

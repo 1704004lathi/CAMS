@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import axios from 'axios';
 import './License.css';
 import Navigation from "../Nav/Navigation";
 
@@ -10,8 +11,11 @@ const Contact = () => {
     message: '',
     licenseNumber: '',
     aadhaarNumber: '',
-    paymentMethod: '', // Added state for payment method
+    paymentMethod: '',
   });
+
+  const [alertMessage, setAlertMessage] = useState('');
+  const [alertType, setAlertType] = useState(''); // 'success' or 'error'
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,38 +28,46 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      const response = await fetch('/api/book-service', { // Adjust the endpoint URL as needed
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+    const { name, email, phone, licenseNumber, aadhaarNumber, paymentMethod } = formData;
 
-      if (response.ok) {
-        alert('Service successfully booked!');
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          message: '',
-          licenseNumber: '',
-          aadhaarNumber: '',
-          paymentMethod: '', // Reset payment method
-        });
-      } else {
-        alert('Failed to book service. Please try again.');
+    if (name && email && phone && licenseNumber && aadhaarNumber && paymentMethod) {
+      try {
+        const response = await axios.post('http://localhost:8080/api/service-bookings/create', formData);
+
+        if (response.status === 200) {
+          setAlertMessage('Your booking has been submitted successfully!');
+          setAlertType('success');
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            message: '',
+            licenseNumber: '',
+            aadhaarNumber: '',
+            paymentMethod: '',
+          });
+        } else {
+          setAlertMessage(`Failed to book service: ${response.statusText}`);
+          setAlertType('error');
+        }
+      } catch (error) {
+        setAlertMessage(`Error: ${error.message}`);
+        setAlertType('error');
       }
-    } catch (error) {
-      console.error('Error:', error);
-      alert('An error occurred while booking the service.');
+    } else {
+      setAlertMessage('Please fill in all required fields.');
+      setAlertType('error');
     }
   };
 
   return (
     <div className="license-contact-container">
       <Navigation />
+      {alertMessage && (
+        <div className={`alert alert-${alertType}`}>
+          {alertMessage}
+        </div>
+      )}
       <h1>Your Contact Details</h1>
       <form onSubmit={handleSubmit}>
         <div className="license-form-group">
@@ -189,6 +201,11 @@ const Contact = () => {
         </fieldset>
         <button type="submit" className="license-button">Book Now</button>
       </form>
+      {/* {alertMessage && (
+        <div className={`alert alert-${alertType}`}>
+          {alertMessage}
+        </div>
+      )} */}
     </div>
   );
 };

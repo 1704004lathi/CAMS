@@ -1,69 +1,103 @@
+/* Reset.css */
+
 .reset-password-container {
+  background: linear-gradient(135deg, #0f0f19, #1a1a2e);
+  color: #e0e0e0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  max-width: 400px;
+  margin: 80px auto;
+  font-family: 'Roboto', sans-serif;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  border: 1px solid rgba(0, 204, 255, 0.3);
+  margin-top: 15rem;
+}
+
+.reset-password-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 204, 255, 0.7);
+}
+
+.reset-hi {
+  font-size: 2rem;
+  text-align: center;
+  color: #00ccff;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px #00ccff;
+}
+
+.reset-hello {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);  */
-  margin: 13% 20% 8% 10%;
-  padding: 2rem;
-  border-radius: 10px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
-.hi {
-  text-align: center;
-  font-size: 2.4rem;
-  font-weight: bold;
-  color: red; /* Neon color for text */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Glowing text effect */
-}
-
-.hello {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 400px; /* Adjust as needed */
-}
-
-.how {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  color: #a6ffcb; /* Light green color */
-}
-
-.ar {
-  padding: 1rem;
-  border: none;
-  border-radius: 5px;
+.reset-how {
   font-size: 1rem;
+  color: #f0f0f0;
+  margin-bottom: 10px;
+  display: block;
+  text-align: left;
   width: 100%;
-  box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.1); /* Transparent input background */
-  color: #ffffff; /* White text */
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #00ccff;
+}
+
+.reset-ar {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 20px;
   outline: none;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
   transition: box-shadow 0.3s ease;
 }
 
-.ar:focus {
-  box-shadow: 0 0 8px #00d1ff; /* Glowing effect on focus */
+.reset-ar:focus {
+  box-shadow: inset 0 0 10px #00ccff;
 }
 
-.you {
-  background: linear-gradient(135deg, #00d1ff, #00a3cc); /* Gradient button */
-  color: white;
-  padding: 1rem 2rem;
+.reset-you {
+  width: 100%;
+  padding: 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00ccff, #0088cc);
+  color: #0f0f19;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
-  margin-top: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 8px #00ccff;
 }
 
-.you:hover {
-  background: linear-gradient(135deg, #00a3cc, #007bff); /* Darker gradient on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+.reset-you:hover {
+  background: linear-gradient(135deg, #0088cc, #005f99);
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px #0088cc;
 }
 
-.messagehi {
-  color: #4caf50; 
+.reset-messagehi {
+  margin-top: 20px;
+  padding: 10px;
+  background: rgba(0, 204, 255, 0.1);
+  border: 1px solid #00ccff;
+  border-radius: 8px;
+  color: #00ccff;
+  text-align: center;
+  transition: background 0.3s ease, border 0.3s ease;
+  text-shadow: 0 0 8px #00ccff;
+}
+
+.reset-messagehi:hover {
+  background: rgba(0, 204, 255, 0.2);
+  border: 1px solid #0088cc;
 }

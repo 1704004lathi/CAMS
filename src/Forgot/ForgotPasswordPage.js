@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import ResetPasswordPage from './ResetPasswordPage';
 import './Forgot.css';
 import Navigation from "../Nav/Navigation";
 
 export default function ForgotPasswordPage() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const history = useNavigate();
+    const navigate = useNavigate();
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -23,14 +22,18 @@ export default function ForgotPasswordPage() {
         const data = await response.json();
         if (data.success) {
             setMessage('Check your email for a link to reset your password.');
+            // Navigate to ResetPasswordPage after successful request
+            navigate('/ResetPasswordPage');
         } else {
             setMessage('There was an error. Please try again.');
         }
     };
 
     return (
+    <div>
+        <Navigation />
         <div className="forgot-container">
-            <Navigation />
+           
             <h2 className="forgot-heading">Forgot password?</h2>
             <h5 className="forgot-instructions">Enter your email address and we will send you a new password</h5>
             <form onSubmit={handleSubmit} className="forgot-form-container">
@@ -44,7 +47,7 @@ export default function ForgotPasswordPage() {
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </p>
-                <p>
+                   <p>
                     <Link to="/ResetPasswordPage" className="forgot-link-secondary">
                         <button className='forgot-button-reset'>Reset Password</button>
                     </Link>
@@ -56,5 +59,6 @@ export default function ForgotPasswordPage() {
                 <p><a href="/" className="forgot-link-secondary">Back to Homepage</a>.</p>
             </footer>
         </div>
+</div>
     );
 }
